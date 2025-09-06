@@ -8,7 +8,7 @@ $router->get('/', function () use ($router) {
             ['prefix' => 'employee'],
             function ($router) {
                 $router->get('/all', 'EmployeeController@index');
-                $router->post('/', 'EmployeeController@store');
+                $router->post('create', 'EmployeeController@store');
                 $router->get('/{id}', 'EmployeeController@show');
 
             }
